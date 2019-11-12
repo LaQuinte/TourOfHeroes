@@ -7,6 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 // In-memory Web API imports
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
+// ROUTING
+import { AppRoutingModule } from './app-routing.module';
+
 // SERVICES
 import { InMemoryDataService } from './service/in-memory-data.service';
 
@@ -16,9 +19,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { HeroesComponent } from './component/heroes/heroes.component';
 import { HeroDetailComponent } from './component/hero-detail/hero-detail.component';
 import { MessagesComponent } from './component/messages/messages.component';
-
-// ROUTING
-import { AppRoutingModule } from './app-routing.module';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
 	declarations: [
@@ -26,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
 		DashboardComponent,
 		HeroesComponent,
 		HeroDetailComponent,
-		MessagesComponent
+		MessagesComponent,
+		HeroSearchComponent
 	],
 	imports: [
 		BrowserModule,
