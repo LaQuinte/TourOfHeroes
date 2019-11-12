@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+	production: true,
+	heroesUrl: 'api/heroes'  // URL to web api
 };
